@@ -1,43 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+/* obtiene la tabla de multiplicar de un numero//*/
+# include <stdio.h>
 
-int main (int argc,char **argv)
-{       
-        system("COLOR 4A");
-     
-        printf("Hola mundo\n");
-     
-      printf("\t\t\t\t\t La  Historia de las computadoras\n\n");
-
-      printf("Primera generacion de las computadoras:\n");
-     
-      printf("\t Las primeras computadoras fueron en la decada de 1940 a 1950.\n");
-     
-      printf("\t Las computadoras eran muy grandes y costosas y eran muy propensas a las fallas, un ejemplo es la ENIAC.\n\n");
-     
-      printf("Segunda generacion:\n");
-     
-      printf("\t Fue de 1950 a 1960.\n");
-     
-      printf("\t Fue la introduccion de los transistores, que fue que las computadoras fueran más pequeñas y eficientes.\n\n");
-     
-      printf("Tercera generacion:\n");
-     
-      printf("\t Fue de 1960 a 1970.\n");
-     
-      printf("\t Se empezaron usar los (chips) que aumentaron la velocidad y eficiencia.\n\n");
-     
-      printf("Cuarta generacion:\n");
-     
-      printf("\t Fue de 1970 a 1980.\n");
-     
-      printf("\t Se desarrollaron los microprocesadores, permitiendo asi las computadoras personales.\n\n");
-     
-      printf("Quinta generacion:\n");    
-     
-      printf("\t Fue de 1980 a la actualidad.\n");
-     
-      printf("\t Avances en la inteligencia artificial y tecnologia de circuitos, como la computacion cuantica.\n");
-     
-      return 0;
+int main () {
+	
+	int numero ;
+	
+	printf("Ingrese el numero:");
+	scanf("%d", & numero);
+	
+	printf("tabla de multiplicar de %d\n", numero);
+		for (int i = 1; i<= 10; i++)
+	{
+		printf("%d x %d = %d\n", numero, i, numero * i);
+	}
+	
+	return 0;
 }
