@@ -1,3 +1,4 @@
+/* obtiene impares de una lista de enteros//*/
 # include <stdio.h>
 
 int main ()
