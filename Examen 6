@@ -1,0 +1,16 @@
+/*Recibe números hasta encontrar uno negativo//*/
+#include <stdio.h>
+
+int main() {
+    int numero;
+    
+    printf("Ingrese un numero: ");
+    scanf("%d", &numero);
+    
+    while(numero >= 0) {
+        printf("Ingrese otro numero: ");
+        scanf("%d", &numero);
+    }
+    
+    return 0;
+}
