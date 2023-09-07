@@ -1,0 +1,16 @@
+# include <stdio.h>
+# include <math.h>
+
+int main (){
+	
+	int n,y;
+	
+	printf("Ponga el numero de la lista:");
+	scanf("%d",&n);
+	
+	y=(n*(n+1))/2;
+	
+	printf("%d", y);
+	
+	return 0;
+}
