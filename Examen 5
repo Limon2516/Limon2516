@@ -1,0 +1,26 @@
+/*Suma los dígitos de un número//*/
+#include <stdio.h>
+
+int sumarDigitos(int numero) {
+    int suma = 0;
+    
+    while (numero != 0) {
+        suma += numero % 10;
+        numero /= 10;
+    }
+    
+    return suma;
+}
+
+int main() {
+    int numero;
+    
+    printf("Ingrese un numero: ");
+    scanf("%d", &numero);
+    
+    int resultado = sumarDigitos(numero);
+    
+    printf("La suma de los digitos de %d es: %d\n", numero, resultado);
+    
+    return 0;
+}
