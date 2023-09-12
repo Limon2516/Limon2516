@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main ()
+{
+      int a=0;
+      int b=0;
+      int c;
+      int suma=0;
+      int numeroaleatorio = rand()%100;
+      srand(time(NULL));
+      
+      
+      printf("Digite la cantidad de numeros aleatorios:");
+      scanf("%d", &c);
+      
+      while(a<c)
+      {
+            numeroaleatorio = rand()%100;
+            printf("Numero aleatorio %d\n", numeroaleatorio);
+            a++;
+            suma = numeroaleatorio + suma;
+      }
+      
+      printf("La suma de los numeros aleatorios es:%d", suma);
+      
+      return 0;
+}
